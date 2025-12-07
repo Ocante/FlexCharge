@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitar Carga Elétrica"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_electric"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <RadioButton
+            android:id="@+id/rb_money_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor (R$)" />
+        <RadioButton
+            android:id="@+id/rb_kwh_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kWh" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edt_electric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor ou kWh"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/txt_result_electric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: -"
+        android:paddingTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/btn_clear_electric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIMPAR" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_request_electric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOLICITAR" />
+    </LinearLayout>
+</LinearLayout>
