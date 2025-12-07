@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FlexCharge</string>
+    <string name="solicitar_agora">SOLICITAR AGORA</string>
+    <string name="selecionar_tipo">Selecione o Tipo</string>
+    <string name="valor_ou_litros">Valor (R$) ou Litros</string>
+    <string name="digite_valor_ou_litros">Digite o valor ou os litros</string>
 </resources>
